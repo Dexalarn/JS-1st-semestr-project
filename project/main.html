@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML File Selector</title>
+    <title>Mini games</title>
 </head>
 <body>
 
-    <h1>Select HTML File to Run:</h1>
+    <h2>Select Web game to Run:</h2>
 
-    <label for="fileSelector">Choose a file:</label>
-    <select id="fileSelector" onchange="runSelectedFile()">
+    <label for="Gameselect">Choose a file:</label>
+    <select id="Gameselect" onchange="runselectedgame()">
         <option value="" disabled selected>Select a file</option>
         <option value="games/dino/dino.html">dino</option>
         <option value="games/Pacman/Pacman.html">Pac-man</option>
         <option value="games/snake/snake.html">snake</option>
+        <option value="games/pingpong/pingpong.html">pingpong</option>
         <!-- Add more options for other HTML files -->
     </select>
 

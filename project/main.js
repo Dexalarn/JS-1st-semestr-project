@@ -1,6 +1,6 @@
-function runSelectedFile() {
-    var selectedFile = document.getElementById("fileSelector").value;
-    if (selectedFile) {
-        window.location.href = selectedFile;
+function runselectedgame() {
+    var selectedgame = document.getElementById("Gameselect").value;
+    if (selectedgame) {
+        window.location.href = selectedgame;
     }
 }
