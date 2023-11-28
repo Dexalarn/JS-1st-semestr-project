@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML File Selector</title>
+</head>
+<body>
+
+    <h1>Select HTML File to Run:</h1>
+
+    <label for="fileSelector">Choose a file:</label>
+    <select id="fileSelector" onchange="runSelectedFile()">
+        <option value="" disabled selected>Select a file</option>
+        <option value="games/dino/dino.html">dino</option>
+        <option value="games/Pacman/Pacman.html">Pac-man</option>
+        <option value="games/snake/snake.html">snake</option>
+        <!-- Add more options for other HTML files -->
+    </select>
+
+    <script>
+        function runSelectedFile() {
+            var selectedFile = document.getElementById("fileSelector").value;
+            if (selectedFile) {
+                window.location.href = selectedFile;
+            }
+        }
+    </script>
+
+</body>
+</html>
