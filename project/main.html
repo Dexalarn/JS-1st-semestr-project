@@ -6,19 +6,56 @@
     <title>Mini games</title>
 </head>
 <body>
+    <style>
+        body {
+          margin: 0;
+          font-family: 'Arial', sans-serif;
+        }
+    
+        nav {
+          background-color: #333;
+          padding: 15px;
+          text-align: center;
+        }
+    
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+    
+        nav li {
+          display: inline;
+          margin-right: 20px;
+        }
+    
+        nav a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 18px;
+          font-weight: bold;
+          transition: color 0.3s ease;
+        }
+    
+        nav a:hover {
+          color: #ffcc00;
+        }
+      </style>
+      <title>Game Menu</title>
+    </head>
+    <body>
 
-    <h2>Select Web game to Run:</h2>
-
-    <label for="Gameselect">Choose a file:</label>
-    <select id="Gameselect" onchange="runselectedgame()">
-        <option value="" disabled selected>Select a file</option>
-        <option value="games/dino/dino.html">dino</option>
-        <option value="games/Pacman/Pacman.html">Pac-man</option>
-        <option value="games/snake/snake.html">snake</option>
-        <option value="games/pingpong/pingpong.html">pingpong</option>
-        <!-- Add more options for other HTML files -->
-    </select>
-
+        <label for="Gameselect">Pick a Game:</label>
+        <nav>
+            <ul>
+        <li><a href="games/Pacman/Pacman.html">Pacman</a></li>
+        <li><a href="games/dino/dino.html">Dino</a></li>
+        <li><a href="games/pingpong/pingpong.html">Pingpong</a></li>
+        <li><a href="games/snake/snake.html">Snake</a></li>
+        <li><a href="#">Highscores</a></li>
+            </ul>
+        
+        </nav>
     <script src="main.js"></script>
 
 </body>
