@@ -1,23 +1,72 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<style media="screen">
-      body {
-        background-color: black
-      }
-    </style>
 		<title>
         pingpong
 		</title>
 		<meta charset="utf-8">
-	   <script src='pingpong.js'></script>
+	
 	</head>
-	<body>
+	<body> 
+	<style media="screen">
+      body {
+        background-color: black
+      }
+        }
+    
+        nav {
+          background-color: #333;
+          padding: 15px;
+          text-align: center;
+        }
+    
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+    
+        nav li {
+          display: inline;
+          margin-right: 20px;
+        }
+    
+        nav a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 18px;
+          font-weight: bold;
+          transition: color 0.3s ease;
+        }
+    
+        nav a:hover {
+          color: #ffcc00;
+        }
+      </style>
+      <title>Game Menu</title>
+    </head>
+    <body>
+<h3>
+        <label for="Gameselect">Pick a Game:</label>
+</h3>
+        <nav>
+            <ul>
+        <li><a href="games/Pacman/Pacman.html">Pacman</a></li>
+        <li><a href="games/dino/dino.html">Dino</a></li>
+        <li><a href="games/pingpong/pingpong.html">Pingpong</a></li>
+        <li><a href="games/snake/snake.html">Snake</a></li>
+        <li><a href="#">Highscores</a></li>
+            </ul>
+        
+        </nav>
     <input type="text" id="score" readonly></input>
 		<input type="text" id="mscore" readonly></input>
     <button type="button" id="start" onclick = "main()">START GAME</button>
 		<button type="button" id="stop" onclick = "stop()">PAUSE</button>
     <canvas style='border: 1px solid green' id='canvas' width  ='1400' height='800'></canvas>
+	    <h4><p> Use the "Left" and "Right" keys to move the Paddle</p></h4>
+
+	       <script src='pingpong.js'></script>
 
   </body>
 </html>
